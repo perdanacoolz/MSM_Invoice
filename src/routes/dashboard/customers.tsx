@@ -82,29 +82,29 @@ export const columns: ColumnDef<Product>[] = [
     // cell: ({ row }) => <div>{row.getValue('address')}</div>,
   // },
   
-   {
-    accessorKey: 'phoneNumber',
-    header: 'phoneNumber',
-    cell: ({ row }) => <div>{row.getValue('phoneNumber')}</div>,
-  },
+   // {
+    // accessorKey: 'phoneNumber',
+    // header: 'phoneNumber',
+    // cell: ({ row }) => <div>{row.getValue('phoneNumber')}</div>,
+  // },
   
-   {
-    accessorKey: 'email',
-    header: 'email',
-    cell: ({ row }) => <div>{row.getValue('email')}</div>,
-  },
+   // {
+    // accessorKey: 'email',
+    // header: 'email',
+    // cell: ({ row }) => <div>{row.getValue('email')}</div>,
+  // },
   
-   {
-    accessorKey: 'website',
-    header: 'website',
-    cell: ({ row }) => <div>{row.getValue('website')}</div>,
-  },
+   // {
+    // accessorKey: 'website',
+    // header: 'website',
+    // cell: ({ row }) => <div>{row.getValue('website')}</div>,
+  // },
   
-   {
-    accessorKey: 'npwp',
-    header: 'npwp',
-    cell: ({ row }) => <div>{row.getValue('npwp')}</div>,
-  },
+   // {
+    // accessorKey: 'npwp',
+    // header: 'npwp',
+    // cell: ({ row }) => <div>{row.getValue('npwp')}</div>,
+  // },
   
    // {
     // accessorKey: 'id',
