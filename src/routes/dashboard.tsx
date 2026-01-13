@@ -89,6 +89,17 @@ function DashboardLayout() {
                                             </Link>
                                         </SidebarMenuButton>
                                     </SidebarMenuItem>
+									
+									 <SidebarMenuItem>
+                                        <SidebarMenuButton asChild>
+                                            <Link to='/dashboard/products'>
+                                                <Package />
+                                                <span>customer</span>
+                                            </Link>
+                                        </SidebarMenuButton>
+                                    </SidebarMenuItem>
+									
+									
                                     <SidebarMenuItem>
                                         <SidebarMenuButton asChild>
                                             <Link to='/dashboard/settings'>
