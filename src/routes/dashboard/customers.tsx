@@ -59,7 +59,7 @@ export const columns: ColumnDef<Product>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Product Name
+          Nama customer
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       )
@@ -76,11 +76,11 @@ export const columns: ColumnDef<Product>[] = [
   },
    
   
-   {
-    accessorKey: 'address',
-    header: 'address',
-    cell: ({ row }) => <div>{row.getValue('address')}</div>,
-  },
+   // {
+    // accessorKey: 'address',
+    // header: 'address',
+    // cell: ({ row }) => <div>{row.getValue('address')}</div>,
+  // },
   
    {
     accessorKey: 'phoneNumber',
@@ -106,47 +106,47 @@ export const columns: ColumnDef<Product>[] = [
     cell: ({ row }) => <div>{row.getValue('npwp')}</div>,
   },
   
-   {
-    accessorKey: 'id',
-    header: 'id',
-    cell: ({ row }) => <div>{row.getValue('id')}</div>,
-  },
+   // {
+    // accessorKey: 'id',
+    // header: 'id',
+    // cell: ({ row }) => <div>{row.getValue('id')}</div>,
+  // },
   
-   {
-    accessorKey: 'createdAt',
-    header: 'createdAt',
-    cell: ({ row }) => <div>{row.getValue('createdAt')}</div>,
-  },
+   // {
+    // accessorKey: 'createdAt',
+    // header: 'createdAt',
+    // cell: ({ row }) => <div>{row.getValue('createdAt')}</div>,
+  // },
   
-   {
-    accessorKey: 'createdBy',
-    header: 'createdBy',
-    cell: ({ row }) => <div>{row.getValue('createdBy')}</div>,
-  },
+   // {
+    // accessorKey: 'createdBy',
+    // header: 'createdBy',
+    // cell: ({ row }) => <div>{row.getValue('createdBy')}</div>,
+  // },
   
-   {
-    accessorKey: 'updatedAt',
-    header: 'updatedAt',
-    cell: ({ row }) => <div>{row.getValue('updatedAt')}</div>,
-  },
+   // {
+    // accessorKey: 'updatedAt',
+    // header: 'updatedAt',
+    // cell: ({ row }) => <div>{row.getValue('updatedAt')}</div>,
+  // },
   
-   {
-    accessorKey: 'updatedBy',
-    header: 'updatedBy',
-    cell: ({ row }) => <div>{row.getValue('updatedBy')}</div>,
-  },
+   // {
+    // accessorKey: 'updatedBy',
+    // header: 'updatedBy',
+    // cell: ({ row }) => <div>{row.getValue('updatedBy')}</div>,
+  // },
   
-   {
-    accessorKey: 'deletedAt',
-    header: 'deletedAt',
-    cell: ({ row }) => <div>{row.getValue('deletedAt')}</div>,
-  },
+   // {
+    // accessorKey: 'deletedAt',
+    // header: 'deletedAt',
+    // cell: ({ row }) => <div>{row.getValue('deletedAt')}</div>,
+  // },
   
-   {
-    accessorKey: 'deletedBy',
-    header: 'deletedBy',
-    cell: ({ row }) => <div>{row.getValue('deletedBy')}</div>,
-  },
+   // {
+    // accessorKey: 'deletedBy',
+    // header: 'deletedBy',
+    // cell: ({ row }) => <div>{row.getValue('deletedBy')}</div>,
+  // },
   
   
   {
@@ -165,14 +165,11 @@ export const columns: ColumnDef<Product>[] = [
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
-            <DropdownMenuItem
-              onClick={() => navigator.clipboard.writeText(product.id)}
-            >
-              Copy Product ID
-            </DropdownMenuItem>
+            
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Edit Product</DropdownMenuItem>
-            <DropdownMenuItem>View Details</DropdownMenuItem>
+            <DropdownMenuItem>Lihat Detail</DropdownMenuItem>
+            <DropdownMenuItem>Edit</DropdownMenuItem>
+			<DropdownMenuItem>Hapus</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       )
