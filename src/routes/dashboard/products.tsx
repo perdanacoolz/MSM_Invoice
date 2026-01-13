@@ -57,7 +57,7 @@ export const columns: ColumnDef<Product>[] = [
       return (
         <Button
           variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          onClick={() => column.toggleSorting(column.getIsSorted() === "desc")}
         >
           Product Name
           <ArrowUpDown className="ml-2 h-4 w-4" />
