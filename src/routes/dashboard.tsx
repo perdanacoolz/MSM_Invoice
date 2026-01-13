@@ -60,7 +60,7 @@ function DashboardLayout() {
                                                 <User2 className="size-4" />
                                             </div>
                                             <div className="grid flex-1 text-left text-sm leading-tight">
-                                                <span className="truncate font-semibold">Your App</span>
+                                                <span className="truncate font-semibold">msm-invoice</span>
                                                 <span className="truncate text-xs">Dashboard</span>
                                             </div>
                                         </Link>
@@ -92,7 +92,7 @@ function DashboardLayout() {
 									
 									 <SidebarMenuItem>
                                         <SidebarMenuButton asChild>
-                                            <Link to='/dashboard/products'>
+                                            <Link to='/dashboard/customers'>
                                                 <Package />
                                                 <span>customer</span>
                                             </Link>
@@ -178,24 +178,11 @@ function DashboardLayout() {
                             <p className='text-sm text-center sm:text-left'>
                                 {`©${new Date().getFullYear()}`}{' '}
                                 <a href='#' className='text-primary'>
-                                    TanStack Start
+                                   MSM Invoice
                                 </a>
-                                , Made for better web design
+                                , Sistem Manajemen Penyewaan Mesin
                             </p>
-                            <div className='flex items-center gap-5'>
-                                <a href='#'>
-                                    <FacebookIcon className='h-4 w-4' />
-                                </a>
-                                <a href='#'>
-                                    <InstagramIcon className='h-4 w-4' />
-                                </a>
-                                <a href='#'>
-                                    <LinkedinIcon className='h-4 w-4' />
-                                </a>
-                                <a href='#'>
-                                    <TwitterIcon className='h-4 w-4' />
-                                </a>
-                            </div>
+                          
                         </div>
                     </footer>
                 </div>
